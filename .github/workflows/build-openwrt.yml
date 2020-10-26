@@ -39,16 +39,16 @@ jobs:
  
   build:
  
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
  
     steps:
  
-      - name: Checkout
-        uses: actions/checkout@master
-        with:
+    - name: Checkout
+      uses: actions/checkout@master
+      with:
           ref: master
  
-      - name: Space cleanup
+    - name: Space cleanup 
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
