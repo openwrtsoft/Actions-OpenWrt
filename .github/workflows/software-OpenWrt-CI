@@ -1,4 +1,4 @@
-name: soft-OpenWrt-CI
+name: software-OpenWrt-CI
  
 on:
   push:
