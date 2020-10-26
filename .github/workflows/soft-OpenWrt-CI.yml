@@ -40,12 +40,11 @@ jobs:
           # ln -s /mnt/openwrt/dl ./dl
           # ln -s /mnt/openwrt/feeds ./feeds
           # ln -s /mnt/openwrt/staging_dir ./staging_dir
-          
-       - name: Update feeds
+      - name: Update feeds
         run: |
           ./scripts/feeds update -a
           ./scripts/feeds install -a
-       - name: Generate configuration file
+      - name: Generate configuration file
         run: |
           rm -f ./.config*
           touch ./.config
