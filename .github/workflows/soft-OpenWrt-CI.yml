@@ -40,7 +40,7 @@ jobs:
           # ln -s /mnt/openwrt/dl ./dl
           # ln -s /mnt/openwrt/feeds ./feeds
           # ln -s /mnt/openwrt/staging_dir ./staging_dir
-          df
+          
        - name: Update feeds
         run: |
           ./scripts/feeds update -a
